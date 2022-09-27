@@ -1,0 +1,265 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar .navbar-nav .nav-item {
+            padding: 10px;
+        }
+        
+        .navbar .navbar-nav .nav-link {
+            color: #000;
+            font-weight: 700;
+        }
+        
+        .navbar .navbar-nav .nav-link:hover {
+            font-weight: 600;
+        }
+        
+        .dropdown-item {
+            background-color: aqua;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .link:hover {
+            color: rgb(0, 0, 255);
+        }
+        
+        .logo {
+            width: 80px;
+        }
+        
+        .navbar-toggler {
+            width: 50px;
+            float: right;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #1E2F97;
+        }
+        
+        .btn {
+            vertical-align: bottom;
+            border: 0;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2), 0 2px 10px 0 rgba(0, 0, 0, .1);
+            font-weight: 500;
+            padding: .625rem 1.5rem .5rem;
+            font-size: .75rem;
+            line-height: 1.5;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .hero-banner {
+            background: url("../Picture/becoming-doctor.jpg") no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 150px 0px;
+            min-height: 80vh;
+            position: relative;
+        }
+        
+        .hero-banner::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn-5 {
+            padding: 8px 24px;
+            border: none;
+            background-color: #1E2F97;
+            text-decoration: none;
+            color: #fff !important;
+            border-radius: 0px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .btn-5:hover {
+            background: blue;
+        }
+        
+        .banner-text-wrap h1 {
+            color: #fff;
+            font-size: 50px;
+            font-weight: 700;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+        }
+        
+        .icon {
+            padding: 8px 24px;
+            text-decoration: none;
+            color: #fff !important;
+            border-radius: 0px;
+            font-size: 20px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        .card {
+            border: none;
+            outline: none;
+            -webkit-box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+            box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+        }
+        
+        .circle {
+            height: 70px;
+            width: 70px;
+            background-color: lightgray;
+            color: black;
+            padding: 12px;
+            font-size: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .features-box {
+            margin-top: 5%;
+        }
+        
+        .fa-solid {
+            font-size: 20px;
+            padding: 10px;
+        }
+        
+        .features-header {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        
+        .features-text {
+            font-weight: 700;
+        }
+        
+        .about-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+        
+        .about-container {
+            background: url("../Picture/BLACK DOCTOR.jpg") no-repeat left;
+            background-size: 55%;
+            height: 100%;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+        
+        .inner-container {
+            width: 55%;
+            float: right;
+            background-color: #fdfdfd;
+            padding: 150px;
+        }
+        
+        .about-header {
+            font-weight: 900;
+            border-bottom: 1px solid #000;
+        }
+        
+        .inner-container h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        
+        .text {
+            font-size: 13px;
+            color: #545454;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+        
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        
+        .service-section {
+            height: 100vh;
+        }
+        
+        .section-title {
+            margin: 2%;
+            padding-bottom: 4%;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        
+        @media screen and (max-width:1200px) {
+            .inner-container {
+                padding: 80px;
+            }
+        }
+        
+        @media screen and (max-width:1000px) {
+            .about-container {
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+            .inner-container {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width:900px) {
+            .navbar .navbar-nav .nav-item {
+                color: #000;
+                font-weight: 600;
+                text-align: left;
+            }
+            .banner-text-wrap h1 {
+                color: #fff;
+                font-size: 26px;
+                font-weight: 700;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+            }
+            .text-features {
+                text-align: center;
+                font-weight: 900;
+                font-size: 100%;
+                color: #000;
+            }
+            .doctors-text h2 {
+                font-size: 2em;
+                font-weight: 600;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            .about-section {
+                height: 60vh;
+            }
+            .about-container {
+                padding: 0;
+            }
+            .inner-container {
+                padding: 60px;
+            }
+        }

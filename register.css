@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alasta" sans-serif;
+}
+
+.login {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+}
+
+.logo1 {
+    color: aqua;
+    font-weight: 700;
+}
+
+.logo2 {
+    font-weight: 700;
+    color: #2b3076;
+}
+
+.left h1 {
+    margin-bottom: 15px;
+}
+
+.left h3 {
+    margin-bottom: 20px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.group label,
+.group input {
+    width: 100%;
+}
+
+.group label {
+    margin-bottom: 10px;
+}
+
+.group input {
+    padding: 12px 12px 12px 55px;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    background-color: #2b5876;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background: #2b5876;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 6px;
+}
+
+.right h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.right p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}

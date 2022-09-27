@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    font-weight: 600;
+}
+
+.dropdown-item {
+    background-color: aqua;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover {
+    color: rgb(0, 0, 255);
+}
+
+.logo {
+    width: 80px;
+}
+
+.navbar-toggler {
+    width: 50px;
+    float: right;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1E2F97;
+}
+
+.btn {
+    vertical-align: bottom;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2), 0 2px 10px 0 rgba(0, 0, 0, .1);
+    font-weight: 500;
+    padding: .625rem 1.5rem .5rem;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+.container {
+    position: relative;
+}
+
+.hero-banner {
+    background: url("microbiologist-doctor-taking-blood-sample-tube-from-rack-with-machines-analysis-lab-background.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 150px 0px;
+    min-height: 80vh;
+    position: relative;
+}
