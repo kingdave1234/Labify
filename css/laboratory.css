@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
     
+    .navbar {
+        position: sticky;
+    }
+    
     .navbar .navbar-nav .nav-item {
         padding: 10px;
     }
@@ -42,6 +46,26 @@
         background-color: #1E2F97;
     }
     
+    .social-media-icon {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .social-media-icon li {
+        float: right;
+    }
+    
+    .social-media-icon li a {
+        display: block;
+        padding: 8px;
+        background-color: #fff;
+    }
+    
+    .social-icon li {
+        list-style-type: none;
+    }
+    
     .btn {
         vertical-align: bottom;
         border: 0;
@@ -55,19 +79,7 @@
     .container {
         position: relative;
     }
-    /*Blog section*/
-    
-    .service-section {
-        height: 100vh;
-        width: 100%;
-        display: grid;
-        place-items: center;
-    }
-    
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    /*features section*/
     
     .card {
         border: 1px solid black;
@@ -130,8 +142,30 @@
     }
     /*......Features section*/
     
+    .service-section {
+        background-color: #fff;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .social-media-icon li a {
+            display: none;
+        }
+    }
+    
     @media screen and (max-width: 600px) {
         .features-header {
-            font-size: 10px;
+            font-size: 18px;
+        }
+        .social-media-icon li a {
+            display: none;
         }
     }
