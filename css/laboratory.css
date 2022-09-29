@@ -131,7 +131,7 @@
     /*......Features section*/
     
     @media screen and (max-width: 600px) {
-        .homepage-section {
-            display: none;
+        .features-header {
+            font-size: 10px;
         }
     }
