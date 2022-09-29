@@ -45,6 +45,19 @@
         color: #fff;
         background-color: #1E2F97;
     }
+    /*homepage section*/
+    
+    .homepage-section {
+        background: url("../labresearch/scientist-putting-blood-sample-from-test-tube-with-micropipette-petri-dish-analysing-chemical-reaction.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 150px 0px;
+        min-height: 100vh;
+        position: relative;
+    }
+    /*End homepage section*/
     
     .social-media-icon {
         list-style-type: none;
@@ -188,13 +201,27 @@
         padding: 100px;
     }
     
-    .after p {
-        color: #fff;
+    .after h4 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .service-link {
+        text-decoration: none;
     }
     
     .service-media:hover .after {
         display: block;
-        background: rgba(0, 0, 0, .6);
+        background: rgba(20, 20, 193, 0.6);
+    }
+    
+    .progress-text h1 {
+        font-family: roboto condensed, Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 50px;
+        color: #031b4e
     }
     
     @media screen and (max-width: 1000px) {
@@ -208,9 +235,6 @@
             font-size: 18px;
         }
         .social-media-icon li a {
-            display: none;
-        }
-        .after p {
             display: none;
         }
     }
