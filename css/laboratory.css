@@ -4,10 +4,6 @@
         box-sizing: border-box;
     }
     
-    .navbar {
-        position: sticky;
-    }
-    
     .navbar .navbar-nav .nav-item {
         padding: 10px;
     }
@@ -53,26 +49,6 @@
         object-position: bottom;
     }
     /*End homepag section*/
-    
-    .social-media-icon {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .social-media-icon li {
-        float: right;
-    }
-    
-    .social-media-icon li a {
-        display: block;
-        padding: 8px;
-        background-color: #fff;
-    }
-    
-    .social-icon li {
-        list-style-type: none;
-    }
     
     .btn {
         vertical-align: bottom;
@@ -151,7 +127,7 @@
     /*......Features section*/
     /*----SERVICES SECTION---*/
     
-    @media screen and (max-width: 1000px) {
+    @media screen and (min-width: 1000px) {
         .social-media-icon li a {
             display: none;
         }
@@ -163,6 +139,9 @@
         }
         .social-media-icon li a {
             display: none;
+        }
+        .navbar {
+            position: relative;
         }
         .mySlides {
             width: 100%;
