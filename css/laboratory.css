@@ -42,12 +42,24 @@
         background-color: #1E2F97;
     }
     /*homepage section*/
-    
-    .mySlides {
+    img{
         width: 100%;
-        object-fit: cover;
-        object-position: bottom;
     }
+   .carousel-item{   
+    background: no-repeat scroll center scroll;
+    -webkit-background-size:cover ;
+    background-size: cover;
+   }
+   .carousel-item{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+   }
     /*End homepag section*/
     
     .btn {
@@ -143,10 +155,8 @@
         .navbar {
             position: relative;
         }
-        .mySlides {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: bottom;
-        }
+     .carousel-item{
+        margin-top: 70px !important;
+    
+     }  
     }
