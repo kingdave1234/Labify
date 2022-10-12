@@ -18,78 +18,55 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css\login.css">
     <script src="https://kit.fontawesome.com/6b663c0730.js " crossorigin="anonymous "></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
 </head>
 
 
 <body>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="" class="signin-form">
-                    <h2 class="title-signin">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <input type="submit" value="Login" class="btn solid">
-                    <p class="social-text">Or signup with social media platform</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+    <div class="login">
+        <div class="left">
+            <h1>Labify Research</h1>
+            <h3>Sign Into Your Account</h3>
 
-
-                </form>
-                <!---Signup-->
-                <form action="" class="signup-form">
-                    <h2 class="title-signup">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <input type="submit" value="Signup" class="btn solid">
-                    <p class="social-text">Or signup with social media platform</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </form>
+            <div class="group">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+                <i class="fa fa-envelope"></i>
             </div>
+
+            <div class="group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <i class="fa fa-key"></i>
+            </div>
+
+            <div class="group re">
+                <div class="1">
+                    <input type="checkbox">
+                    <label for="remember">Remember me!</label>
+                </div>
+               <a href="#">Forget Password</a>
+            </div>
+            <button><i class="fa fa-send"></i>SignIn</button>
+             
+            <div class="group">
+                <span>Or SignIn With</span>
+                <hr>
+            </div>
+
+            <div class="group btn">
+                <a href="#" class="twitter">Twitter</a>
+                <a href="#" class="google">Google</a>
+                <a href="#" class="facebook">Facebook</a>
+            </div>
+            <p>Dont have an account ?<a href="#">Register Here!</a></p>
         </div>
-
+        <div class="right">
+            <h1>Welcome to Labify-Research</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit nostrum alias repellendus quae molestiae itaque perspiciatis veniam cumque reprehenderit animi harum, est ipsum! Asperiores modi distinctio porro nihil fugiat.</p>
+        </div>
+    </div>
 </body>
-
-</html>
