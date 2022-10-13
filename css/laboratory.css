@@ -6,6 +6,10 @@
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
+    /*--hhhhh*/
+     /* Style The Dropdown Button */
+
+     /*--hhhhh*/
     .navbar{
         top: 0px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -47,18 +51,30 @@
         color: #fff;
         background-color: #1E2F97;
     }
-    .container {
-        position: relative;
-    }
-    /*homepage section*/
 
+    /*homepage section*/
     
+.homepage-section{
+    padding:70px 17%;
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.big-title h1{
+   font-size: 50px;
+    font-weight: 900;
+  
+}
+
 /*--features*/
     .card {
         border: 1px solid black;
         width: 100%;
         height: 100%;
-        padding: 2em 1.5em;
+        padding: 0.5em 0.5em;
         background: linear-gradient(#ffffff 50%, #1E2F97 50%);
         background-size: 100% 200%;
         background-position: 0 2.5%;
@@ -66,7 +82,10 @@
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
         cursor: pointer;
     }
-    
+    .card-body{
+        display: flex;
+        align-items: center;
+    }
     h3 {
         font-size: 20px;
         font-weight: 600;
@@ -75,32 +94,22 @@
         font-family: 'Poppins', sans-serif;
     }
     
-    p {
-        color: #575a7b;
-        font-size: 15px;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
-        font-family: 'Poppins', sans-serif;
-    }
-    
+  
     .features-header {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-transform: uppercase;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
     }
     
     .feature-icon {
-        background-color: #1E2F97;
         position: relative;
         margin: auto;
         font-size: 30px;
         height: 2.5em;
         width: 2.5em;
-        color: #ffffff;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
+        color: #1E2F97;
+        display:inline-block;
         transition: 0.5s;
     }
     
@@ -118,6 +127,22 @@
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
     }
+    .feature-text{
+        padding-left: 20px;
+    }
+    .feature-text h4{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .feature-text p {
+        color: #575a7b;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        margin-top: 8px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
     /*......Features section*/
     
     /*----SERVICES SECTION---*/
@@ -126,8 +151,18 @@
     }
     
     @media screen and (max-width: 600px) {
+        .h3, h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
         .features-header {
             font-size: 18px;
         }
-  
+        .homepage-section{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        
     }
