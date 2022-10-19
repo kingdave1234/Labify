@@ -23,6 +23,7 @@
         color: #000;
         font-weight: 700;
         text-transform: uppercase;
+        letter-spacing: .1em;
     }
     
     .navbar .navbar-nav .nav-link:hover {
@@ -46,7 +47,7 @@
         width: 50px;
         float: right;
     }
-    
+   
     .btn-primary {
         color: #fff;
         background-color: #1E2F97;
@@ -64,11 +65,23 @@
     align-items: center;
 }
 .big-title h1{
-   font-size: 50px;
+   font-size: 60px;
     font-weight: 900;
+    text-shadow: #575a7b;
   
 }
-
+.btn-homepage{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #1E2F97;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.btn-homepage:hover{
+    background-color:rgba( 3,27,78,1);
+    color: #fff;
+}
 /*--features*/
     .card {
         border: 1px solid black;
@@ -144,25 +157,84 @@
     }
     
     /*......Features section*/
+ .about{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .about-img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+
+ } 
+ .all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+ }
+ .main{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .all-text h4{
+    font-size: 18px;
+    color: #1E2F97;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 10px;
+ }
+ .all-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+ }
+ .all-text p{
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .btn-about{
+    background-color: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
     
-    /*----SERVICES SECTION---*/
-    
+ }
+ 
+ /*----SERVICES SECTION---*/
+  
+ 
     @media screen and (min-width: 1000px) {
     }
+      
+   
+        @media screen and (max-width: 798px) and (min-width:300px){
+            .h3, h3 {
+                font-size: 18px;
+                font-weight: 500;
+            }
     
-    @media screen and (max-width: 600px) {
-        .h3, h3 {
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        .features-header {
-            font-size: 18px;
-        }
-        .homepage-section{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-        }
-        
+            .features-header {
+                font-size: 18px;
+            }
+            .homepage-section{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+          
+          
+    
     }
