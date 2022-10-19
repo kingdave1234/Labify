@@ -1,0 +1,137 @@
+body{
+        
+}
+.container{
+    display: flex;
+    height: 100vh;
+    color: black;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.Ab{
+    padding: 25px;
+    font-family: "Work Sans",Arial,sans-serif;
+}
+
+img{
+    border-radius: 1px;
+}
+
+form{
+    background-color: aliceblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 10px 12px 15px gray;
+    position: relative;
+    left: 130px;
+    height: 90vh;
+}
+
+.question-box{
+    padding: 20px;
+    
+    width: 50%;
+}
+
+.form-box{
+    padding: 20px;
+    
+    width: 50%;
+
+}
+
+input{
+    display: block;
+    padding: 15px;
+    margin-left: 20px;
+    width: 90%;
+    border: 0.1px gray solid;
+
+}
+
+.aside{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    height: 80vh;
+    width: 90%;
+    padding: 30px;
+    box-shadow: 10px 12px 15px gray;
+    position: relative;
+    left: 50px;
+}
+
+.aside p{
+    margin-top: 90px;
+    padding: 10px;
+}
+
+.aside img{
+    border-radius: 20px;
+}
+
+footer{
+    background-color: aliceblue;
+}
+
+.footer{
+   
+    display: flex;
+    padding: 20px;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.one,.two,.three{
+    padding: 100px;
+}
+
+.fa{
+    padding: 12px;
+}
+
+h5{
+    font-weight: bold;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 798px) and (min-width:300px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img{
+        width: 88%;
+    }
+
+    form{
+        flex-direction: column;
+        position: relative;
+        left: 50px;
+        width: 70%; 
+        height: auto;
+    }
+    .question-box{
+        width: 100%;
+        height: auto;
+    }
+
+    .aside{
+        width: 70%;
+        height: auto;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}

@@ -204,21 +204,21 @@
     font-weight: 600;
     margin-bottom: 10px;
  }
- .btn-about{
-    background-color: white;
-    padding: 20px 32px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    
- }
- 
+
  /*----SERVICES SECTION---*/
   
  
     @media screen and (min-width: 1000px) {
     }
-      
+     .about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+     } 
+     .all-text{
+        text-align: center;
+        margin-top:40px ;
+     }
    
         @media screen and (max-width: 798px) and (min-width:300px){
             .h3, h3 {
