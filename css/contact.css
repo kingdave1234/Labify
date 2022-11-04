@@ -31,7 +31,9 @@
 .link:hover {
     color: rgb(0, 0, 255);
 }
-
+.dropdown-item{
+    padding:10px 20px;
+}
 .logo {
     width: 200px;
 }
@@ -45,9 +47,19 @@
     color: #fff;
     background-color: #1E2F97;
 }
-.showcase-area .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+.contact-section{
+    padding: 100px 17%;
+    height: 40vh;
+    background: #031b4e;
+}
+.contact-text h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.contact-text p{
+    text-align: center;
+    color: #fff;
 }

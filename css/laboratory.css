@@ -11,6 +11,7 @@
 
      /*--hhhhh*/
     .navbar{
+        border-top: 4px solid #031b4e;
         top: 0px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     }
@@ -23,7 +24,7 @@
         color: #000;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: .1em;
+        letter-spacing: .05em;
     }
     
     .navbar .navbar-nav .nav-link:hover {
@@ -38,7 +39,9 @@
     .link:hover {
         color: rgb(0, 0, 255);
     }
-    
+    .dropdown-item{
+        padding: 10px 20px;
+    }
     .logo {
         width: 200px;
     }
@@ -65,6 +68,7 @@
     align-items: center;
 }
 .big-title h1{
+    color: #031b4e;
    font-size: 60px;
     font-weight: 900;
     text-shadow: #575a7b;
@@ -72,16 +76,20 @@
 }
 .btn-homepage{
     display: inline-block;
-    padding: 10px 30px;
-    background: #1E2F97;
-    color: #fff;
-    border-radius: 0.5rem;
+    padding: 23px 43px;
+    background:#fff ;
+    color: #031b4e;
+    border: 1px solid #031b4e;
+    font-weight: 600;
+    border-radius: 2px;
     text-decoration: none;
 }
 .btn-homepage:hover{
-    background-color:rgba( 3,27,78,1);
+    background:#031b4e;
     color: #fff;
+    
 }
+
 /*--features*/
     .card {
         border: 1px solid black;
@@ -109,6 +117,7 @@
     
   
     .features-header {
+        color:#031b4e;
         font-size: 1.3rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -194,9 +203,11 @@
     margin-bottom: 10px;
  }
  .all-text h1{
+    color:#031b4e;
     font-size: 30px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 900;
+    text-transform: uppercase;
  }
  .all-text p{
     font-size: 12px;
@@ -204,66 +215,74 @@
     font-weight: 600;
     margin-bottom: 10px;
  }
-
- /*----SERVICES SECTION---*/
+ .counter-section{
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E2F97;
+    color: #fff;
+ }
+ .counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ span.num{
+    font-size: 40px;
+    font-weight: 700;
+ }
+ span.text{
+    font-size: 15px;
+    font-size: 700;
+    text-transform: uppercase;
+ }
+.team-section{
+    padding: 15px 0;
+}
 .contact-section{
-    height: 20vh;
-    width: 100%;
+    padding: 20px 17%;
     background: #1E2F97;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-} 
-.contact-text{
-    width: 600px;
-    max-width: 100%;
-    padding: 0 10px;
+    gap: 15%;
+
 }
-.contact-main{
-    width: 1290px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.text-contact h3{
+   font-weight: 700;
+   color: #fff;
+   margin-bottom: 10px;
+  
 }
-.contact-text h4{
-    font-size: 20px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 800;
-    margin-bottom: 5px;
-}
-.contact-text p{
-    font-size: 15px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 15px;
+.text-contact p{
+    color: rgb(225, 225, 225,0.8);
 }
 .btn-contact{
-    padding: 12px 40px;
-    background-color: #fff;
-    color: #1E2F97;
-    border: none;
+    display: inline-block;
+    padding: 10px 43px;
+    background: #fff;
+    color: #031b4e;
+    font-weight: 600;
+    border-radius: 2px;
     text-decoration: none;
-    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    -webkit-box-align:center;
+ 
 }
 .btn-contact:hover{
     background: #031b4e;
     color: #fff;
 }
- .progress-text h4{
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 50px;
-    color:#031b4e;
- }
- .progress-text span{
-    font-weight: 900;
- }
+ /*----SERVICES SECTION---*/
+
+ 
+
+
+
     @media screen and (max-width: 1000px) {
-    }
+ 
      .about{
         width: 100%;
         height: auto;
@@ -273,6 +292,8 @@
         
         margin-top:40px ;
      }
+    }  
+
    
         @media screen and (max-width: 798px) and (min-width:300px){
             .h3, h3 {
@@ -292,12 +313,15 @@
                 text-align: center;
                 margin-top:40px ;
              }
-             .contact-text h4{
-                text-align: center;
+             .counter-section{
+                flex-direction: column;
+                padding: 10px;
+                height: 100%;
              }
-             .contact-text p{
-                text-align: center;
+             .contact-section{
+                flex-direction: column;
              }
-          
-    
+            .text-contact h3{
+                text-align: center;
+            }    
     }

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    /*--hhhhh*/
+     /* Style The Dropdown Button */
+
+     /*--hhhhh*/
+    .navbar{
+        top: 0px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    .navbar .navbar-nav .nav-item {
+        padding: 10px;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+    
+    .navbar .navbar-nav .nav-link:hover {
+        color: #1E2F97;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .link:hover {
+        color: rgb(0, 0, 255);
+    }
+    
+    .logo {
+        width: 200px;
+    }
+    
+    .navbar-toggler {
+        width: 50px;
+        float: right;
+    }
+   
+    .btn-primary {
+        color: #fff;
+        background-color: #1E2F97;
+    }
+
+        
+.homepage-section{
+    padding:70px 17%;
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    background: url("/labresearch/microbiologist-doctor-taking-blood-sample-tube-from-rack-with-machines-analysis-lab-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.homepage-section::before{
+    content: "";
+    position: absolute;
+    height: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.big-title h1{
+    
+    color: #fff;
+   font-size: 60px;
+    font-weight: 900;
+    
+    
+  
+}
+
+/*......Features section*/
+.about{
+height: 100vh;
+width: 100%;
+background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-img{
+width: 580px;
+max-width: 100%;
+height: auto;
+padding: 0 10px;
+
+} 
+.all-text{
+width: 600px;
+max-width: 100%;
+padding: 0 10px;
+}
+.main{
+width: 1290px;
+max-width: 95%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+}
+.all-text h4{
+font-size: 18px;
+color: #1E2F97;
+letter-spacing: 1px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.all-text h1{
+color:#031b4e;
+font-size: 30px;
+margin-bottom: 10px;
+font-weight: 900;
+}
+.all-text p{
+font-size: 12px;
+line-height: 30px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+@media screen and (max-width: 798px) and (min-width:300px){
+    .h3, h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .features-header {
+        font-size: 18px;
+    }
+    .homepage-section{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .all-text{
+        text-align: center;
+        margin-top:40px ;
+     }
+}

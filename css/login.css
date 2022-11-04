@@ -1,112 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue:#031b4e;
+    --caput-mortuum: #593224ff;
+    --oxford-blue: #012154ff;
+    --blue-sapphire: #356980ff;
+    --dark-cornflower-blue: #133C90ff;
+    --black-bean: #4D0105ff;
+}
 *{
-    margin: 0;
+    margin:0 ;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body{
-  
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-.login{
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+label{
+    margin-bottom: 0.5rem;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.split-screen{
     display: flex;
-    height: 100vh;
+    flex-direction: column;
 }
 .left{
-    width: 40%;
+    height: 200px;
+}
+ .right{
     display: flex;
-    flex-direction: column;
-    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)),url("/labresearch/26359.jpg");
+    background-size: cover;
+    
+  
+}
+.left .copy{
+    color: white;
     text-align: center;
-
+    -webkit-font-smoothing:var(--primary-blue);
+    -moz-osx-font-smoothing:grayscale;
 }
-.left h1{
-    margin-bottom: 15px;
+.left p{
+    font-weight: 400;
 }
-.left h3{
-    margin-bottom: 20px;
+.copy h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-blue);
 }
-
-.group{
+.copy h2{
+    font-weight: 400;
+}
+.right .copy{
+    color: black;
+    
+}
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right .copy p{
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+.right form{
+    width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+   border: 1px solid #c4c4c4;
+   padding: 1em;
+   margin-bottom: 1.25rem;
+   font-size: 0.875rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container .password{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px; 
-    text-align: left;
 }
-
-.group label,
-.group input{
-    width:100%;
-}
-.group label{
-    margin-bottom: 10px;
-}
-.group input{
-    padding: 12px 12px 12px 55px;
-}
-
-.group i.fa{
+.input-container .password i {
     position: absolute;
-    width: 50px;
-    height: 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #2B32B2;
-    border-radius: 5px 0 0 5px;
-    top: 30px;
+    top: 42px;
+    right: 16px;
 }
 
-button,label,p,a,input{
-    font-size: 14px;
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
+.checkbox-container{
+    display: block;
+    position: relative; 
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+.checkbox-container input:checked~.checkmark{
+    background-color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4rem;
+    left:0;
+}
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked~.checkmark:after{
+    display: block;
+}
+.checkbox-container .checkmark::after{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.signup-btn{
+    display:block;
+    width: 100%;
+    background:var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.signup-btn:hover{
+    background: #2c4893;
+    cursor: pointer;
+}
+@media screen and (min-width:900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,.right{
+        display: flex;
+    width: 50%;
+    height: auto;
+    }
+}
+    
 
 
-
-
-button{
-    font-size: 14px;
-    padding: 10px;
-    border: 0;
-    background-color: #2B32B2;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 5px;
-}
-
-.group input{
-    border-radius: 5px;
-    border:2px solid #aaa;
-}
-
-.group .i{
-    display: flex;
-    flex-direction: row;
-}
-button i{
-    margin-right: 5px;
-}
-.right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column ;
-    width: 60%;
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #fff;
-}
-.right h1{
-    margin-bottom:30px;
-    font-size: 40px;
-   color: #fff;
-}
-.right p{
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center ;
-}
