@@ -39,14 +39,24 @@ label{
 .left{
     height: 200px;
 }
+.logo{
+    width: 200px;
+display: flex;
+align-items: center;
+}
  .right{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .left{
     background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)),url("/labresearch/26359.jpg");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
     
   
 }

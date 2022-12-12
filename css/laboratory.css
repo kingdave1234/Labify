@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+:root{
+   /* CSS HEX */
+--royal-blue-dark: #021854ff;
+--winter-sky: #FD307Bff;
+--celtic-blue: #236BC4ff;
+--dark-cornflower-blue: #053C86ff;
+--bleu-de-france: #338DEAff;
+}
 * {
         margin: 0;
         padding: 0;
@@ -59,7 +66,7 @@
     /*homepage section*/
     
 .homepage-section{
-    padding:70px 17%;
+    padding:90px 10%;
     width: 100%;
     min-height: 80vh;
     display: grid;
@@ -67,8 +74,14 @@
     grid-gap: 1.5rem;
     align-items: center;
 }
-.big-title h1{
-    color: #031b4e;
+.left{
+    padding: 10% 15%;
+}
+.text{
+    font-size: 12px;
+}
+.big-title h1{ 
+    color: var(--royal-blue-dark);
    font-size: 60px;
     font-weight: 900;
     text-shadow: #575a7b;
@@ -78,14 +91,14 @@
     display: inline-block;
     padding: 23px 43px;
     background:#fff ;
-    color: #031b4e;
+    color: var(--royal-blue-dark);
     border: 1px solid #031b4e;
     font-weight: 600;
     border-radius: 2px;
     text-decoration: none;
 }
 .btn-homepage:hover{
-    background:#031b4e;
+    background:var(--royal-blue-dark);
     color: #fff;
     
 }
@@ -114,7 +127,7 @@
         margin: 1em 0;
         font-family: 'Poppins', sans-serif;
     }
-    
+   
   
     .features-header {
         color:#031b4e;
@@ -124,13 +137,35 @@
         font-family: 'Poppins', sans-serif;
     }
     
-    .feature-icon {
+    .feature-icon-one {
         position: relative;
         margin: auto;
         font-size: 30px;
         height: 2.5em;
         width: 2.5em;
-        color: #1E2F97;
+        color: var(--winter-sky);
+        display:inline-block;
+        transition: 0.5s;
+    }
+     
+    .feature-icon-two {
+        position: relative;
+        margin: auto;
+        font-size: 30px;
+        height: 2.5em;
+        width: 2.5em;
+        color:var(--winter-sky);
+        display:inline-block;
+        transition: 0.5s;
+    }
+     
+    .feature-icon-three {
+        position: relative;
+        margin: auto;
+        font-size: 30px;
+        height: 2.5em;
+        width: 2.5em;
+        color: var(--winter-sky);
         display:inline-block;
         transition: 0.5s;
     }
@@ -169,10 +204,15 @@
  .about{
     height: 100vh;
     width: 100%;
-    background: white;
+    background: url("/labresearch/shape-bg-01.png");
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+
+ .grey-bg{
+    background: gainsboro;
  }
  .about-img{
     width: 580px;
@@ -215,79 +255,89 @@
     font-weight: 600;
     margin-bottom: 10px;
  }
- .counter-section{
-    height: 25vh;
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    align-items: center;
-    justify-content: center;
-    background-color: #1E2F97;
-    color: #fff;
- }
- .counter-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- span.num{
-    font-size: 40px;
-    font-weight: 700;
- }
- span.text{
-    font-size: 15px;
-    font-size: 700;
-    text-transform: uppercase;
- }
-.team-section{
-    padding: 15px 0;
+
+/*Gallery display*/
+#section_counter{
+    padding: 5rem 0;
+    background: #ffffff;
 }
-.contact-section{
-    padding: 20px 17%;
-    background: #1E2F97;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15%;
+.counter-container{
+    max-width: 112rem;
+    margin:0 auto ;
+    padding: 0 1rem;
+    background: #ffffff;
+}
+.counter-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.3rem;
+}
+.counter-item{
+    padding: 4rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid var(--royal-blue-dark);
+    transition: all 0.5s ease-in-out;
+}
+.item-one:hover{
+    border: 1px solid var(--winter-sky);
+    transition: 0.5s;
+}
+.item-two:hover{
+    border: 1px solid var(--bleu-de-france);
+    transition: 0.5s;
+}
+.item-three:hover{
+    border: 1px solid var(--celtic-blue);
+    transition: 0.5s;
+}
+.item-four:hover{
+    border: 1px solid var(--dark-cornflower-blue);
+}
+.counter-item counter{
+    font-size: 4.5rem;
+    color: transparent;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    -webkit-text-stroke-width: 0.15rem;
+    -moz-text-stroke-width:0.15rem;
+    -ms-text-stroke-width:0.15rem;
+    -o-text-stroke-width:0.15rem;
+    -webkit-text-stroke-color: #000;
+    -moz-text-stroke-color:#000;
+    -ms-text-stroke-color:#000;
+    -o-text-stroke-width-color:#000;
 
 }
-.text-contact h3{
-   font-weight: 700;
-   color: #fff;
-   margin-bottom: 10px;
+ /*team section*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:var(--royal-blue-dark); /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
   
+#myBtn:hover {
+    background-color:grey; /* Add a dark-grey background on hover */
 }
-.text-contact p{
-    color: rgb(225, 225, 225,0.8);
-}
-.btn-contact{
-    display: inline-block;
-    padding: 10px 43px;
-    background: #fff;
-    color: #031b4e;
-    font-weight: 600;
-    border-radius: 2px;
-    text-decoration: none;
-    -webkit-box-align:center;
- 
-}
-.btn-contact:hover{
-    background: #031b4e;
-    color: #fff;
-}
- /*----SERVICES SECTION---*/
 
- 
+
 
 
 
     @media screen and (max-width: 1000px) {
  
-     .about{
-        width: 100%;
-        height: auto;
-        padding: 60px 0;
-     } 
+   
      .all-text{
         
         margin-top:40px ;
@@ -300,28 +350,40 @@
                 font-size: 18px;
                 font-weight: 500;
             }
-    
+            .homepage-section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .big-title{
+                text-align: center;
+            } 
+            .about{
+                width: 100%;
+                height: auto;
+                padding: 60px 0;
+             } 
+            .text{
+                text-align: center;
+            }
+            .button-section{
+                text-align: center;
+            }
             .features-header {
                 font-size: 18px;
             }
-            .homepage-section{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-            }
+          
             .all-text{
                 text-align: center;
                 margin-top:40px ;
              }
-             .counter-section{
-                flex-direction: column;
-                padding: 10px;
-                height: 100%;
-             }
-             .contact-section{
-                flex-direction: column;
-             }
+          
             .text-contact h3{
                 text-align: center;
             }    
+    }
+    @media (max-width:500px) {
+        .counter_box{
+            flex-basis:100%
+        }    
     }
